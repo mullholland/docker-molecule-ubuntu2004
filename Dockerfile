@@ -28,11 +28,14 @@ RUN apt-get update ; \
 
 # Install requirements.
 RUN apt-get update \
+    && apt-get dist-upgrade -y \
     && apt-get install -y \
     python3 \
     sudo \
     gnupg \
     python3-apt \
+    apt-transport-https \
+    ca-certificates \
     && apt-get clean
 
 VOLUME [ "/sys/fs/cgroup" ]
