@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:23.04
 
 LABEL maintainer="mullholland"
 LABEL build_update="2022-12-11"
